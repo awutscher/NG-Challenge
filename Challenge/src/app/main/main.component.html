@@ -1,5 +1,8 @@
-<button (click)="apiData.getTopArtists">getTopArtists</button>
-<div *ngFor="let artist of artists">
-    <p>{{artist.name}}</p>
-    <p>{{artist.playcount}}</p>
-</div>>
+<button (click)="arraytest()">getTopArtists</button>
+<div *ngFor="let item of artists |  keyvalue">
+    <p>test</p>
+    <p>{{item.value}}</p>
+    <!-- <p>{{item.artist.name}}</p> -->
+    <!-- <p>{{artists.name}}</p>
+    <p>{{artists.playcount}}</p> -->
+</div>

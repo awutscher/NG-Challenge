@@ -25,7 +25,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatToolbarModule,
     MatAutocompleteModule,
     HttpClientModule,
-
   ],
   providers: [],
   bootstrap: [AppComponent]
