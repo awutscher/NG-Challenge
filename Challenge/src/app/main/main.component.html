@@ -1,1 +1,5 @@
-<p>main works!</p>
+<button (click)="apiData.getTopArtists">getTopArtists</button>
+<div *ngFor="let artist of artists">
+    <p>{{artist.name}}</p>
+    <p>{{artist.playcount}}</p>
+</div>>
