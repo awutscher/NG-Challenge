@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiFunctionsService } from '../api-functions.service';
-import { ItopArtists } from '../interfaces/ItopArtists';
+
 
 @Component({
   selector: 'app-main',
@@ -8,8 +8,8 @@ import { ItopArtists } from '../interfaces/ItopArtists';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-  /* artists: any ; */
-  artists:ItopArtists[] = [];
+  artists: any ;
+  topartists:any;
 
   constructor(public apiData:ApiFunctionsService) {
    }
@@ -20,21 +20,4 @@ export class MainComponent implements OnInit {
       console.log(this.artists)
     })
     }
-/* 
-    getthis(){
-      this.apiData.getTopArtists().subscribe((res: any) =>{
-        this.artists=res})
-        console.log("hi")
-      } */
-
-    test(){
-      let testdata = this.apiData.getTopArtists()
-      console.log(typeof(testdata))
-    }
-
-    arraytest(){
-      let testdata = this.apiData.getTopArtists()
-      console.log(typeof(testdata))
-    }
-
 }
